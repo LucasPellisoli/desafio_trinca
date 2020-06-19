@@ -1,0 +1,35 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  .label {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .input {
+    background: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    border: 0px;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .input .eror-mensagem {
+    color: red;
+    margin-top: 5px;
+  }
+
+  .eror-mensagem {
+    color: red;
+  }
+  .erro {
+    border: 2px solid red;
+  }
+}

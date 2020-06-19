@@ -1,0 +1,99 @@
+.Barbecue {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .container {
+    width: 80%;
+    max-width: 1140px;
+    margin-top: -45px;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+  }
+
+  .barbecue-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .barbecue-detalhes {
+      display: flex;
+      flex-direction: column;
+
+      .detalhes {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #333;
+      }
+
+      .date {
+        font-family: Raleway;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+    .barbecue-info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .people {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .money {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .people-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5c231;
+    padding: 10px 0px;
+    cursor: pointer;
+    > div {
+      display: flex;
+    }
+    .text {
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 25px;
+      color: #333;
+      padding-left: 10px;
+    }
+  }
+  .payed {
+    text-decoration-line: line-through;
+  }
+  .CTA {
+    margin: 15px 15px;
+    span {
+      cursor: pointer;
+      width: 200px;
+      background: #333;
+      padding: 5px 20px;
+      color: #fff;
+      border-radius: 4px;
+    }
+  }
+
+  .sub-title {
+    font-family: Raleway;
+    font-size: 18px;
+    color: #333;
+    margin-left: 15px;
+  }
+}

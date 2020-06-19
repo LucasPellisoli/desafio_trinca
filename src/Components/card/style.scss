@@ -1,0 +1,50 @@
+.Card {
+  height: 150px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+
+  p {
+    margin: 5px;
+  }
+  .date {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .description {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .people {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    padding-left: 5px;
+  }
+  .money {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,27 @@
+.checkbox-box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .label {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    padding-left: 5px;
+  }
+
+  .checkbox {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.ckecked {
+      background: #333;
+    }
+  }
+}

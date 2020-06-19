@@ -1,0 +1,63 @@
+.Main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .container {
+    width: 80%;
+    max-width: 1140px;
+    margin-top: -45px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .add-new-barbecue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f1f1;
+  }
+
+  .add-new-barbecue-label {
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .add-new-barbecue-icon {
+    background-color: #ffd836;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  //   // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  // // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  // // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

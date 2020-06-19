@@ -1,0 +1,28 @@
+.BarbecueForm {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+
+  .btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    outline: none;
+    border: 0px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+  }
+}

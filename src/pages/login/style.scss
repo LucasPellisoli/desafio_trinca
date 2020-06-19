@@ -1,0 +1,46 @@
+.Login {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #ffd836;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .banner-opacity {
+    margin-top: -60px;
+    height: 60px;
+    background: linear-gradient(0deg, #ffd836 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+  }
+  .login-box {
+    width: 250px;
+  }
+
+  .main {
+    width: 80%;
+    margin-top: -50px;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    outline: none;
+    border: 0px;
+    padding: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
