@@ -106,17 +106,17 @@ function Barbecue() {
             </div>
             <div>
               <img src={money} />
-              <span className="money">{currentBarbecue.totalMoney}</span>
+              <span className="money">{`R$${currentBarbecue.totalMoney}`}</span>
             </div>
           </div>
         </div>
-        {!isUserInBabecue && (
+        <div className="barbecue-people">
           <div className="CTA">
             <span onClick={() => setEntrarModal(true)}>
               Adicionar Participante
             </span>
           </div>
-        )}
+        </div>
 
         {currentBarbecue?.contributions?.map((user) => (
           <div

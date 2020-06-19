@@ -48,7 +48,7 @@ exports.delete = function (req, res, next) {
 exports.login = function (req, res, next) {
   User.find({ email: req.body.email }, function (err, _user) {
     if (err) return next(err);
-    if (_user && _user.length == 0) {
+    if (!(_user.length > 0)) {
       res.status(401).send("Usuario não encontrado!");
     } else if (req.body.password !== `${_user[0].password}`) {
       res.status(401).send("Usuario não encontrado!");

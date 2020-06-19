@@ -31,6 +31,17 @@
     padding: 10px 0px;
     width: 100%;
     margin-top: 25px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: normal;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   .people {
