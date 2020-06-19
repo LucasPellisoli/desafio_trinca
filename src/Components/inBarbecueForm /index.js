@@ -31,7 +31,7 @@ function InBarbecueForm({
       return;
     }
     _submit({
-      _id: initalValue._id,
+      _id: initalValue?._id || "",
       fullname: fullname,
       value: valor,
       wasPaid: wasPaid,
