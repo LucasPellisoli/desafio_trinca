@@ -4,6 +4,12 @@
 
 - https://desafio-trinca.herokuapp.com/
 
+## Usuario
+
+| Email                | Senha |
+| :------------------- | ----: |
+| lucas@appmock.com.br |   133 |
+
 ## Como execultar
 
 ### Primeiro vamos clonar o repositorio
