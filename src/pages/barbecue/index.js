@@ -120,6 +120,7 @@ function Barbecue() {
 
         {currentBarbecue?.contributions?.map((user) => (
           <div
+            key={user._id}
             className="barbecue-people"
             onClick={() => {
               openModal(user._id);

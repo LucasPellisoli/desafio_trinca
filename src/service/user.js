@@ -11,7 +11,6 @@ export const _login = function (email, password) {
       password,
     })
     .then((response) => {
-      console.log("Data", response.data);
       dispatch({
         type: LOGIN,
         payload: response.data,
@@ -40,11 +39,9 @@ export const _create = function (fullName, email, password, foodRestriction) {
 };
 
 export const _getUser = function (id) {
-  console.log(id);
   api
     .get(`/user/${id}`)
     .then((response) => {
-      console.log("Data", response.data);
       dispatch({
         type: SET_USER,
         payload: response.data,
@@ -67,18 +64,14 @@ export const _update = function (
       password,
       foodRestriction,
     })
-    .then((response) => {
-      console.log("Data", response.data);
-    })
+    .then((response) => {})
     .catch((err) => console.log(err));
 };
 
 export const _delete = function (id) {
   api
     .delete(`/user/${id}`)
-    .then((response) => {
-      console.log("Data", response.data);
-    })
+    .then((response) => {})
     .catch((err) => console.log(err));
 };
 

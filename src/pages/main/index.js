@@ -36,7 +36,6 @@ function Main() {
   if (navigate) {
     return <Redirect to={navigate} push={true} />;
   }
-  console.log("TEST", barbecue);
   return (
     <div className="Main">
       <Header noBack />

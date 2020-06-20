@@ -11,18 +11,18 @@ async function formatOutput(_barbecue, res) {
     contributionsUsersId.push(user.userId);
   });
 
-    res.send({
-      _id: _barbecue._id,
-      description: _barbecue.description,
-      additionalNotes: _barbecue.additionalNotes,
-      criededBy: _barbecue.criededBy,
-      date: _barbecue.date,
-      withDrink: _barbecue.withDrink,
-      valueSuggested: _barbecue.valueSuggested,
-      contributions: _barbecue.contributions,
-      totalPeople,
-      totalMoney,
-    });
+  res.send({
+    _id: _barbecue._id,
+    description: _barbecue.description,
+    additionalNotes: _barbecue.additionalNotes,
+    criededBy: _barbecue.criededBy,
+    date: _barbecue.date,
+    withDrink: _barbecue.withDrink,
+    valueSuggested: _barbecue.valueSuggested,
+    contributions: _barbecue.contributions,
+    totalPeople,
+    totalMoney,
+  });
 }
 
 async function formatOutputAll(_allBarbecue, res) {
@@ -88,9 +88,10 @@ exports.update = function (req, res, next) {
     }
     barbecue.description = req.body.description || barbecue.description;
     barbecue.withDrink = req.body.withDrink || barbecue.withDrink;
-    barbecue.additionalNotes = req.body.additionalNotes || barbecue.additionalNotes;
+    barbecue.additionalNotes =
+      req.body.additionalNotes || barbecue.additionalNotes;
     barbecue.valueSuggested =
-    req.body.valueSuggested || barbecue.valueSuggested;
+      req.body.valueSuggested || barbecue.valueSuggested;
     barbecue.date = req.body.date || barbecue.date;
     barbecue.contributions = req.body.contributions || barbecue.contributions;
     barbecue.save(function (err, _barbecue) {
@@ -133,15 +134,12 @@ exports.updateUserToBarbecue = function (req, res, next) {
       withDrink: req.body.withDrink || _user.withDrink,
       wasPaid: req.body.wasPaid || _user.wasPaid,
     };
-    
+
     barbecue.contributions = barbecue.contributions.filter(function (user) {
       return user._id != req.body._id;
     });
-    console.log("1",req.body);
 
-    console.log("1",barbecue.contributions);
     barbecue.contributions.push(_user);
-    console.log("2",barbecue.contributions);
 
     barbecue.save(function (err, _barbecue) {
       if (err) {
